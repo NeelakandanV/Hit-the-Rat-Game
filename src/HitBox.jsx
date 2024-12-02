@@ -39,6 +39,7 @@ function HitBox() {
             setGameStats(true)
             setStart("Pause")
             setSeconds(60)
+            setScore(0)
 
             Timer.current = setInterval(()=>{
                 setSeconds((pre)=>{
