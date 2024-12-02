@@ -50,7 +50,11 @@ function HitBox() {
                         const disScoreCard = document.querySelector(".ScoreCard")
                         disScoreCard.classList.add("DisplayScore")
 
-                        ResetGame()
+                        setStart("Start")
+                        setGameStats(false)
+                        setSeconds(60)
+                        setHitIndex(null)
+                        setHit([...GameBox])
                         //console.log(hitIndex,hit)
                     }
                     return pre-1;
@@ -69,6 +73,7 @@ function HitBox() {
     const ResetGame =()=>{
         clearInterval(Timer.current)
         setStart("Start")
+        setScore(0)
         setGameStats(false)
         setSeconds(60)
         setHitIndex(null)
