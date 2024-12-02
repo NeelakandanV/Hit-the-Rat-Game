@@ -1,0 +1,87 @@
+.MainParent{
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Title{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.DisplayZone{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.GameBox{
+  height: 40vh;
+  width: 40vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  border: 2px solid black;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.UnitBox{
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.UnitBox:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.ScoreCard{
+  display: none;
+}
+
+.DisplayScore{
+  position: absolute;
+  top: 10vh;
+  height: 550px;
+  width: 400px;
+  background-color: rgb(205, 227, 225);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 2;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+button{
+  padding: 12px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 5px;
+  background-color: dodgerblue;
+  font-weight: 700;
+  font-size: large;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
